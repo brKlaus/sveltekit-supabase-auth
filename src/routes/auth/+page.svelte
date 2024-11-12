@@ -10,3 +10,4 @@
     <button>Login</button>
     <button formaction="?/signup">Sign up</button>
 </form>
+<a href="/auth/github">Enter with Github</a>
