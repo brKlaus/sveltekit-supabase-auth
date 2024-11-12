@@ -1,0 +1,1 @@
+<h1>You found a private route</h1>
