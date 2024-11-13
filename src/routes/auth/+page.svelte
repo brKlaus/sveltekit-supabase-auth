@@ -28,7 +28,7 @@
          data-client_id="19807774449-jsd86f7baifms0ctqo4tk3iscfr0need.apps.googleusercontent.com"
          data-context="use"
          data-ux_mode="popup"
-         data-login_uri="http://localhost:5173/auth/callback/google"
+         data-login_uri={$page.url.origin + "/auth/callback/google"}
          data-auto_prompt="false"
          data-use_fedcm_for_prompt="true">
     </div>
