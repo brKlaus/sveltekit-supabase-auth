@@ -20,3 +20,5 @@
     <button formaction="?/signup">Sign up</button>
 </form>
 <a href="/auth/github">Enter with Github</a>
+<br>
+<a href="/auth/google">Enter with Google</a>
