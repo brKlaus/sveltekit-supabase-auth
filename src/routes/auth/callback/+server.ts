@@ -24,6 +24,6 @@ export const GET = async (event) => {
         }
     }
 
-    redirectTo.pathname = '/auth/error';
+    redirectTo.pathname = '/auth';
     redirect(303, redirectTo);
 };

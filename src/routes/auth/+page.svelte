@@ -1,3 +1,12 @@
+<script>
+    import { page } from '$app/stores';
+
+    const error = $state($page.url.searchParams.get("error_description"));
+</script>
+
+{#if error}
+<p style="color:red">{error}</p>
+{/if}
 <form method="POST" action="?/login">
     <label>
         Email
