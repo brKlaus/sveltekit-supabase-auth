@@ -3,7 +3,7 @@ import {redirect} from '@sveltejs/kit'
 import type {Actions} from './$types'
 
 export const actions: Actions = {
-    signup: async ({request, locals: {supabase}}) => {
+    signup: async ({request, url, locals: {supabase}}) => {
         const formData = await request.formData()
         const email = formData.get('email') as string
         const password = formData.get('password') as string
@@ -11,7 +11,7 @@ export const actions: Actions = {
         // if Confirm email is enabled, a user is returned but session is null.
         // if Confirm email is disabled, both a user and a session are returned.
         const {data, error} = await supabase.auth.signUp({
-            email, password, options: {emailRedirectTo: 'http://localhost:5173/auth/confirm'}
+            email, password, options: {emailRedirectTo: url.origin + '/auth/callback'}
         });
 
         if (error && !data.user) {
