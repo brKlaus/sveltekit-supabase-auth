@@ -7,7 +7,6 @@ export const POST = async (event): Promise<void> => {
         locals: {supabase},
     } = event;
     const formData = await request.formData()
-    console.log(formData);
     const credential = formData.get("credential") as string;
     const next = url.searchParams.get("next") ?? "/";
 
