@@ -1,38 +1,23 @@
-# sv
+# SvelteKit-Supabase-Auth
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+A SvelteKit project template with Supabase authentication, ready to implement for both server and client-side applications.
 
-## Creating a project
+## Getting Started
 
-If you're seeing this, you've probably already done this step. Congrats!
+1. **Review Changes:** Check the project’s change history to understand implementation details for various features.
+2. **Provider Configuration:** Some authentication providers require specific setup within your Supabase dashboard or locally if you're using the Supabase CLI.
 
-```bash
-# create a new project in the current directory
-npx sv create
+## Contributing
 
-# create a new project in my-app
-npx sv create my-app
-```
+If you implemented an alternative flow for a different provider or discovered improvements, feel free to collaborate by contributing to this repo!
 
-## Developing
+## Resources
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+- [**Setting up Server-Side Auth for SvelteKit**](https://supabase.com/docs/guides/auth/server-side/sveltekit)
+- **Signup Email Confirmation**: [Email Templates](https://supabase.com/docs/guides/auth/auth-email-templates)
+- [**Login with Google**](https://supabase.com/docs/guides/auth/social-login/auth-google?queryGroups=environment&environment=server&queryGroups=framework&framework=sveltekit)
+- [**Login with GitHub**](https://supabase.com/docs/guides/auth/social-login/auth-github?queryGroups=environment&environment=server&queryGroups=framework&framework=sveltekit)
 
-```bash
-npm run dev
+## Inspiration
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+- [**Repo: Davis-Media / supabase-sveltekit-2024-tutorial**](https://github.com/Davis-Media/supabase-sveltekit-2024-tutorial)
